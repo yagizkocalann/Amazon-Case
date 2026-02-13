@@ -1,0 +1,106 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "add-a-random-product-to-cart-from-amazon.com.tr-homepage;add-a-product-from-the-homepage-to-the-cart",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Add a product from the homepage to the cart",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3198337040
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open the Amazon TR homepage",
+            "match": {
+              "location": "step-definitions/web/addtocart.steps.js:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1242324084
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I click any product on the Amazon homepage",
+            "match": {
+              "location": "step-definitions/web/addtocart.steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1263113957
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I add the product to the cart",
+            "match": {
+              "location": "step-definitions/web/addtocart.steps.js:12"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5003524500,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (/Users/yagizkocalan/Repo-for-Cursor/Amazon-Case/node_modules/@cucumber/cucumber/lib/time.js:64:20)\n    at listOnTimeout (node:internal/timers:573:17)\n    at process.processTimers (node:internal/timers:514:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I go to the Amazon cart page",
+            "match": {
+              "location": "step-definitions/web/addtocart.steps.js:16"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I should see at least one item in the Amazon cart",
+            "match": {
+              "location": "step-definitions/web/addtocart.steps.js:20"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 121888666
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "add-a-random-product-to-cart-from-amazon.com.tr-homepage",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Add a random product to cart from Amazon.com.tr homepage",
+    "tags": [],
+    "uri": "features/web/01-add-to-cart.feature"
+  }
+]
